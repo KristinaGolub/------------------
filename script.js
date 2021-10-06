@@ -44,7 +44,7 @@ $("#feedback-form").on("submit", function (e) {
 
   if (!isValidedPhone) {
     clearErrorMessage("#phone");
-    showErrorMessage("#phone", "Необходимо заполнить поле");
+    showErrorMessage("#phone", "Некорректно введен телефон");
   }
 
   if (!isValidedAgreement) {
