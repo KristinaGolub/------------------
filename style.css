@@ -1,0 +1,364 @@
+/* Общие стили (начало)*/
+body {
+    font-family: Arial,
+    Helvetica,
+    sans-serif;
+}
+
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.row {
+    max-width: 1290px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2F3441;
+    margin-bottom: 1.5em;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2F3441;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #606981;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+p {
+    font-size: 18px;
+    color: #2F3441;
+}
+
+.red {
+    color: #DF2030 ;
+}
+
+.hidden {
+    display: none;
+}
+/* Общие стили (конец*/
+
+
+
+/* Button (начало) */
+.button {
+    height: 60px;
+    padding: 21px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: normal;
+    color: #ffffff;
+    border:none;
+    border-radius: 3px;
+    background-color: #DF2030;
+}
+
+.button:hover {
+    background-color: #CA1920;
+}
+
+.button:active {
+    border:none;
+    background-color: #CA1920;
+    box-shadow: inset 0 3px 2px 1px #0000002d,
+                0 5px 5px #0000002d;
+}
+
+/* Button (конец) */
+
+
+
+/* Header (начало) */
+header {
+    margin-top: 6em;
+    margin-bottom: 5em;
+}
+
+/* Header (конец) */
+
+
+
+/*Сarousel(начало)  */
+
+.slider {
+    margin-bottom: 80px;
+}
+
+.container-navigation {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.navigation {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.owl-dots {
+    display: flex;
+    margin: 0 2.5em;
+}
+
+.owl-dot {
+    align-self: center;
+}
+
+.owl-dot-btn {
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+}
+
+.owl-dot-btn::before {
+    border-radius: 50%;
+    background-color: gray;
+    width: 8px;
+    height: 8px;
+    display: block;
+    content: '';
+    margin: 0 0.4em;
+    border: none;
+    outline: none;
+}
+
+.owl-dot.active .owl-dot-btn::before {
+    background-color: #296093;
+    width: 11px;
+    height: 11px;
+}
+
+/* */
+
+.image-prev {
+    content: url('images/nav-prev.svg');
+}
+
+.image-next {
+    
+    content: url('images/nav-next.svg');
+}
+
+.owl-prev {
+   left: -30px;
+}
+
+.owl-next {
+    right: -30px;
+}
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    top: 5px;
+}
+
+/*  */
+
+.carousel-article {
+    height: 130px;
+    padding-top: 0.1em;
+    padding-left: 1.5em;
+    background-color: #F4F7FA;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.carousel-article p {
+    color: #606981;
+    font-size: 20px;
+}
+
+.geo-bg {
+    background-image: url('images/carousel-bg/bi_geo-alt-fill.svg');
+}
+
+.world-bg {
+    background-image: url('images/carousel-bg/bx_bx-world.svg');
+}
+
+.headphones-bg {
+    background-image: url('images/carousel-bg/fa-solid_headphones.svg');
+}
+
+.user-bg {
+    background-image: url('images/carousel-bg/bx_bxs-user.svg');
+}
+
+.peoples-bg {
+    background-image: url('images/carousel-bg/Group\ 1201.svg');
+}
+
+.business-bg {
+    background-image: url('images/carousel-bg/bx_bxs-business.svg');
+}
+
+/* /*Сarousel(конец)  */
+
+
+
+/* Main (начало) */
+main {
+    padding-top: 102px;
+    padding-bottom: 80px;
+    background-color: #F4F7FA;
+}
+
+form {
+    box-sizing: border-box;
+}
+
+.field input[type=text] {
+    font-size: 16px;
+    color: #2F3441 !important;
+    padding-bottom: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #2F3441;
+    box-sizing: border-box;  
+    outline: 0;
+    width: 100%;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+.field {
+    position: relative;
+    margin-bottom: 2.5em;
+
+}
+
+.field label {
+    font-size: 16px;
+    color: #676B78;
+    pointer-events: none;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    transition: all 200ms;
+}
+
+.field input:focus+label,
+.field input:not(:placeholder-shown)+label {
+    top: -25px;
+    left: -10px;
+    padding: 2px 10px;
+}
+
+.validate.error {
+    color: #DF2030;
+    margin-top: 0px;
+}
+
+.validate.error input {
+    border-color: #DF2030 !important;
+}
+
+.validate.error label {
+    color: #DF2030;
+}
+
+.validate.error .error-message {
+    font-size: 12px;
+}
+
+
+.phone-description {
+    font-family: Arial,
+    Helvetica,
+    sans-serif;
+    font-size: 12px;
+    color: #333333;
+}
+
+.photo-caption {
+    margin-top: 5px;
+    text-align: end;
+}
+
+/* Main (конец) */
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    header {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .slider {
+        margin-bottom: 2em;
+    }
+
+    .carousel-article {
+        margin: 0 1em;
+    }
+
+    .carousel-article h3 {
+        font-size: 1.8em;
+    }
+
+    .carousel-article p {
+        font-size: 18px;
+    }
+
+    main {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+}
+
+
+
+/* @media (min-width: 750px) { */
+
+@media (max-width: 576px) {
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .photo-caption {
+        margin-right: 1em;
+    }
+}
+
+
+
+
+
